@@ -1,0 +1,5 @@
+{
+    "appname" : "kindle",
+    "appport" : "8080",
+    "mode" : "browser"
+}
