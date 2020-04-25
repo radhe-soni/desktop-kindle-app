@@ -1,6 +1,6 @@
 # desktop-shortcut
 
-Javascript starter project for Neutralinojs
+Create a web-app shortcut
 
 ## Get started
 
