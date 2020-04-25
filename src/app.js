@@ -24,13 +24,16 @@
  */
 const urlOfWebApp = 'https://read.amazon.com/';
 let myapp = {
-    myfunction : function () { window.location.href = urlOfWebApp }
+    myfunction : async function () { 
+        await new Promise(r => setTimeout(r, 2000));
+        window.location.href = urlOfWebApp;
+     }
 };
     
 
 Neutralino.init({
     load: function() {
-        setTimeout(myapp.myfunction(), 3000);
+        myapp.myfunction();
     },
     pingSuccessCallback : function() {
 
