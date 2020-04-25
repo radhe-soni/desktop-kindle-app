@@ -19,18 +19,18 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
-
-import './mycss.css';
-import './mycss2.css';
-
+/**
+ * Replace https://read.amazon.com/ with url of your desired web-app.
+ */
+const urlOfWebApp = 'https://read.amazon.com/';
 let myapp = {
-    myfunction : function () { window.location.href = 'https://read.amazon.com/' }
+    myfunction : function () { window.location.href = urlOfWebApp }
 };
     
 
 Neutralino.init({
     load: function() {
-        myapp.myfunction();
+        setTimeout(myapp.myfunction(), 3000);
     },
     pingSuccessCallback : function() {
 
